@@ -101,7 +101,7 @@ export const HeroSection = () => {
           <div className='inline-flex items-center gap-4 rounded-lg border border-black-brown bg-black-brown px-4 py-1.5'>
             <div className='size-2.5 rounded-full bg-green-500'></div>
             <div className='text-sm font-medium'>
-              Available for new projects
+              This Software Developer is Available
             </div>
           </div>
         </div>
