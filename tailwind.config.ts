@@ -25,6 +25,13 @@ const config: Config = {
         sans: 'var(--font-sans)',
         serif: 'var(--font-serif)',
       },
+      colors: {
+        'light-pink': '#FFEDED',
+        'medium-pink': '#FFCCD2',
+        'burned-orange': '#B3541E',
+        'medium-brown': '#362222',
+        'dark-brown': '#2A221E',
+      },
     },
   },
   plugins: [],
