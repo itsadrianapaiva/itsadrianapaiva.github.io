@@ -33,6 +33,7 @@ const config: Config = {
         'burned-orange': '#B3541E',
         'medium-brown': '#362222',
         'dark-brown': '#2A221E',
+        'black-brown': '#1A120B'
       },
     },
   },
