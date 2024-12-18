@@ -1,6 +1,6 @@
 export const Header = () => {
   return (
-    <div className='fixed top-3 flex w-full place-content-center'>
+    <div className='fixed top-3 flex w-full place-content-center z-10'>
       <nav className='flex gap-1 rounded-full border border-light-pink/15 bg-light-pink/10 p-0.5 backdrop-blur'>
         <a
           href='#'

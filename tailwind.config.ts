@@ -28,6 +28,8 @@ const config: Config = {
       colors: {
         'light-pink': '#FFEDED',
         'medium-pink': '#FFCCD2',
+        'dark-pink': '#F78CA2',
+        'red-pink': '#D80032',
         'burned-orange': '#B3541E',
         'medium-brown': '#362222',
         'dark-brown': '#2A221E',
