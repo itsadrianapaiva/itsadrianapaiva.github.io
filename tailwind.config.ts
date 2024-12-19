@@ -29,8 +29,10 @@ const config: Config = {
         'light-pink': '#FFEDED',
         'medium-pink': '#FFCCD2',
         'dark-pink': '#F78CA2',
+        'intense-pink': '#CE5A67',
         'red-pink': '#D80032',
         'burned-orange': '#B3541E',
+        'light-brown': '#705C53',
         'medium-brown': '#362222',
         'dark-brown': '#2A221E',
         'black-brown': '#1A120B'
