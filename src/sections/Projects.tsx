@@ -84,7 +84,7 @@ export const ProjectsSection = () => {
           {portfolioProjects.map((project) => (
             <div
               key={project.title}
-              className="relative z-0 rounded-3xl bg-light-pink/10 px-8 pt-8 after:pointer-events-none after:absolute after:inset-0 after:z-10 after:rounded-3xl after:outline after:outline-2 after:-outline-offset-2 after:outline-light-pink/20 after:content-[''] md:px-10 md:pt-12 lg:pt-16 lg:px-20"
+              className="relative z-0 rounded-3xl bg-light-pink/10 px-8 pt-8 after:pointer-events-none after:absolute after:inset-0 after:z-10 after:rounded-3xl after:outline after:outline-2 after:-outline-offset-2 after:outline-light-pink/20 after:content-[''] md:px-10 md:pt-12 lg:pt-16 lg:px-20 overflow-hidden"
             >
               <div
                 className='absolute inset-0 -z-10 opacity-5'
@@ -126,9 +126,9 @@ export const ProjectsSection = () => {
                     </button>
                   </a>
                 </div>
-                <div className="">
+                <div className="relative">
                 <Image
-                  className='-mb-4 mt-8 rounded-tl-2xl rounded-tr-2xl md:-mb-0 md:rounded-tl-3xl md:rounded-tr-3xl lg:mt-0 lg:absolute lg:h-[88.5%] lg:w-[46.6%] object-cover object-left-bottom lg:rounded-tr-none lg:rounded-br-3xl'
+                  className='-mb-4 mt-8 rounded-tl-2xl rounded-tr-2xl md:-mb-0 md:rounded-tl-3xl md:rounded-tr-3xl lg:mt-0 lg:absolute lg:h-[117%] lg:max-w-none lg:rounded-tr-none lg:rounded-br-3xl lg:w-auto'
                   src={project.image}
                   alt={project.title}
                 />
