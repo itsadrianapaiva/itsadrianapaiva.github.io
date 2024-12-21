@@ -16,7 +16,7 @@ const SectionHeader = ({
             {eyebrow}
           </p>
         </div>
-        <h2 className='mt-6 text-center font-serif text-3xl m d:text-5xl'>
+        <h2 className='mt-6 text-center font-serif text-3xl md:text-5xl'>
           {title}
         </h2>
         <p className='mx-auto mt-4 max-w-md text-center text-white/60 md:text-lg lg:text-xl'>

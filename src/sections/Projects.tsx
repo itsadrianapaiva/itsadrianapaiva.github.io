@@ -6,6 +6,7 @@ import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import grainImage from '@/assets/images/grain.jpg';
 import SectionHeader from '@/components/SectionHeader';
+import Card from '@/components/Card';
 
 const portfolioProjects = [
   {
@@ -68,25 +69,22 @@ export const ProjectsSection = () => {
   return (
     <section className='pb-16 lg:py-24'>
       <div className='container'>
-        <SectionHeader eyebrow="Real-world Results" title="Featured Projects" description='See how I transformed concepts into modern and engaging digital experiences.'/>
+        <SectionHeader
+          eyebrow='Real-world Results'
+          title='Featured Projects'
+          description='See how I transformed concepts into modern and engaging digital experiences.'
+        />
 
         <div className='mt-10 flex flex-col gap-20 md:mt-20'>
           {portfolioProjects.map((project) => (
-            <div
+            <Card
               key={project.title}
-              className="relative z-0 rounded-3xl bg-light-pink/10 px-8 pt-8 after:pointer-events-none after:absolute after:inset-0 after:z-10 after:rounded-3xl after:outline after:outline-2 after:-outline-offset-2 after:outline-light-pink/20 after:content-[''] md:px-10 md:pt-12 lg:pt-16 lg:px-20 overflow-hidden"
+              className='px-8 pt-8 md:px-10 md:pt-12 lg:px-20 lg:pt-16'
             >
-              <div
-                className='absolute inset-0 -z-10 opacity-5'
-                style={{
-                  backgroundImage: `url(${grainImage.src})`,
-                }}
-              ></div>
-
               <div className='lg:grid lg:grid-cols-2 lg:gap-16'>
-                <div className="lg:pb-16">
-                  <div className='to-intense-pink inline-flex gap-2 bg-gradient-to-r from-medium-pink bg-clip-text text-sm font-bold uppercase tracking-wide md:tracking-widest text-transparent md:gap-4'>
-                    <span className="">{project.company}</span>
+                <div className='lg:pb-16'>
+                  <div className='to-intense-pink inline-flex gap-2 bg-gradient-to-r from-medium-pink bg-clip-text text-sm font-bold uppercase tracking-wide text-transparent md:gap-4 md:tracking-widest'>
+                    <span className=''>{project.company}</span>
                     <span>&bull;</span>
                     <span>{project.year}</span>
                   </div>
@@ -116,16 +114,16 @@ export const ProjectsSection = () => {
                     </button>
                   </a>
                 </div>
-                <div className="relative">
-                <Image
-                  className='-mb-4 mt-8 rounded-tl-2xl rounded-tr-2xl md:-mb-0 md:rounded-tl-3xl md:rounded-tr-3xl lg:mt-0 lg:absolute lg:h-[117%] lg:max-w-none lg:rounded-tr-none lg:rounded-br-3xl lg:w-auto'
-                  src={project.image}
-                  alt={project.title}
-                />
+                <div className='relative'>
+                  <Image
+                    className='-mb-4 mt-8 rounded-tl-2xl rounded-tr-2xl md:-mb-0 md:rounded-tl-3xl md:rounded-tr-3xl lg:absolute lg:mt-0 lg:h-[117%] lg:w-auto lg:max-w-none lg:rounded-br-3xl lg:rounded-tr-none'
+                    src={project.image}
+                    alt={project.title}
+                  />
                 </div>
               </div>
 
-              <div className='my-7 flex w-[18rem] flex-row flex-wrap items-center justify-start gap-2 md:mt-3 md:w-full lg:col-span-1 lg:w-[25rem] lg:-mt-6'>
+              <div className='my-7 flex w-[18rem] flex-row flex-wrap items-center justify-start gap-2 md:mt-3 md:w-full lg:col-span-1 lg:-mt-6 lg:w-[25rem]'>
                 {project.stack.map((stack) => (
                   <span
                     key={stack.title}
@@ -135,7 +133,7 @@ export const ProjectsSection = () => {
                   </span>
                 ))}
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
