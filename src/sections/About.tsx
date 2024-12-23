@@ -18,6 +18,8 @@ import CloudIcon from '@/assets/icons/googlecloud.svg';
 import TechIcon from '@/components/TechIcon';
 import mapImage from '@/assets/images/map.png';
 import myMemoji from '@/assets/images/adriana-avatar-laptop.png';
+import CardHeader from '@/components/CardHeader';
+import ToolboxItems from '@/components/ToolboxItems';
 
 const toolboxItems = [
   {
@@ -111,48 +113,27 @@ export const AboutSection = () => {
           description='Learn more about who I am, what I do, and what inspires me.'
         />
 
-        <div className='mt-20'>
-          <Card className="h-[320px]">
-            <div className='flex flex-col'>
-              <div className='inline-flex items-center gap-2'>
-                <StarIcon className='size-9 text-medium-pink' />
-                <h3 className='font-serif text-3xl'>My Reads</h3>
-              </div>
-              <p className='mt-2 text-sm text-white/60'>
-                Explore the books shaping my perspectives.
-              </p>
-            </div>
+        <div className='mt-20 flex flex-col gap-8'>
+          <Card className='h-[320px] p-6'>
+            <CardHeader
+              title='My Reads'
+              description='Explore the books shaping my perspectives.'
+            />
             <div className='mx-auto mt-8 w-40'>
               <Image
                 src={bookCover}
                 alt='Book Cover'
+                className='h-full w-full translate-y-16 scale-150 object-cover'
               />
             </div>
           </Card>
-          <Card>
-            <div>
-              <StarIcon />
-              <h3>My Toolbox</h3>
-              <p>
-                Explore the technologies and tools that I use to craft
-                exceptional digital experiences.
-              </p>
-            </div>
-            <div>
-              {toolboxItems.map((item) => (
-                <div key={item.title}>
-                  <TechIcon component={item.iconType} />
-                  <span>{item.title}</span>
-                </div>
-              ))}
-            </div>
+          <Card className="h-[320px]">
+            <CardHeader title="My Toolbox" description="Explore the technologies and tools that I use to craft exceptional digital experiences." className="px-6 pt-6" />
+            <ToolboxItems items={toolboxItems} className="mt-6" itemsWrapperClassName='-translate-x-1/2'/>
+            <ToolboxItems items={toolboxItems} className="mt-6"/>
           </Card>
-          <Card>
-            <div>
-              <StarIcon />
-              <h3>Beyond the Code</h3>
-              <p>Explore my interests and hobbies beyond the digital realm.</p>
-            </div>
+          <Card className="p-6">
+            <CardHeader title="My Hobbies" description="Explore my interests and hobbies beyond the digital realm." />
             <div>
               {hobbies.map((hobby) => (
                 <div key={hobby.title}>
@@ -162,7 +143,7 @@ export const AboutSection = () => {
               ))}
             </div>
           </Card>
-          <Card>
+          <Card className="p-6">
             <Image
               src={mapImage}
               alt='Map'
