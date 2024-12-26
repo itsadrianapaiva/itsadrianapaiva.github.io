@@ -21,12 +21,13 @@ export const ContactSection = () => {
               </p>
             </div>
             <div className='flex flex-col gap-4'>
-              <button className='inline-flex h-12 w-max items-center gap-2 rounded-xl bg-red-pink px-6 text-light-pink'>
-                <span className='font-semibold'>Contact Me</span>
+              <button className='inline-flex h-12 w-max items-center gap-2 rounded-xl bg-red-pink/80 px-6 text-light-pink'>
+                <a href='mailto:itsadrianapaiva@gmail.com' className='font-semibold'>Contact Me</a>
                 <ArrowUpRightIcon className='size-4' />
               </button>
               <button className='inline-flex h-12 w-max items-center gap-2 rounded-xl bg-medium-brown px-6 text-light-pink'>
-                <span className='font-semibold'>My Resume</span>
+                <a href="/resume.pdf" 
+                download="Adriana_Paiva_Resume.pdf" className='font-semibold'>My Resume</a>
                 <ArrowUpRightIcon className='size-4' />
               </button>
             </div>
