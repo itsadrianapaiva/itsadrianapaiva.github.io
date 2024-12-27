@@ -16,8 +16,8 @@ export const ContactSection = () => {
                 Let's create something amazing together
               </h2>
               <p className='mt-2 text-sm md:text-base'>
-                Ready to bring your next project to life? Let's connect and
-                discuss how I can help you achieve your goals.
+                Do you like what you see? Let's connect and
+                discuss how I can be a good fit for your team.
               </p>
             </div>
             <div className='flex flex-col gap-4'>

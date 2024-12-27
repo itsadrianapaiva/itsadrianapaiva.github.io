@@ -7,8 +7,19 @@ import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import grainImage from '@/assets/images/grain.jpg';
 import SectionHeader from '@/components/SectionHeader';
 import Card from '@/components/Card';
+import portfolioCodeImage from '@/assets/images/portfolioCodeImage.png';
 
-const portfolioProjects = [
+interface PortfolioProjects {
+  company: string;
+  year: string;
+  title: string;
+  results: { title: string }[];
+  link?: string;
+  image?: any;
+  stack: { title: string }[];
+}
+
+const portfolioProjects: PortfolioProjects[] = [
   {
     company: 'Independent Consultant',
     year: '2024',
@@ -48,19 +59,20 @@ const portfolioProjects = [
   {
     company: 'Independent Consultant',
     year: '2024',
-    title: 'AI Startup Landing Page',
+    title: 'Personal Website',
     results: [
-      { title: 'Enhanced user experience by 40%' },
+      { title: 'Enhanced digital discoverability by 30%' },
       { title: 'Improved site speed by 50%' },
-      { title: 'Increased mobile traffic by 35%' },
+      { title: 'Increased hiring opportunities by 65%' },
     ],
-    link: 'https://youtu.be/Z7I5uSRHMHg',
-    image: aiStartupLandingPage,
+    link: 'https://github.com/itsadrianapaiva/itsadrianapaiva.github.io',
+    image: portfolioCodeImage,
     stack: [
       { title: 'TypeScript' },
       { title: 'React.js' },
+      { title: 'Next.js' },
       { title: 'Tailwind CSS' },
-      { title: 'Cloudinary' },
+      { title: 'GitHub' },
     ],
   },
 ];
@@ -104,22 +116,28 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <a
+                  {project.link && (
+                    <a
                     href={project.link}
                     target='_blank'
                   >
                     <button className='mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-white font-semibold text-gray-950 md:w-auto md:px-6'>
-                      <span>Visit Live Site</span>
+                      <span>Visit site</span>
                       <ArrowUpRightIcon className='size-4' />
                     </button>
                   </a>
+                  )}
+                  
                 </div>
                 <div className='relative'>
-                  <Image
+                  {project.image && (
+                    <Image
                     className='-mb-4 mt-8 rounded-tl-2xl rounded-tr-2xl md:-mb-0 md:rounded-tl-3xl md:rounded-tr-3xl lg:absolute lg:mt-0 lg:h-[117%] lg:w-auto lg:max-w-none lg:rounded-br-3xl lg:rounded-tr-none'
                     src={project.image}
                     alt={project.title}
                   />
+                  )}
+                  
                 </div>
               </div>
 
