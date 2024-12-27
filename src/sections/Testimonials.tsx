@@ -7,6 +7,7 @@ import SectionHeader from '@/components/SectionHeader';
 import Image from 'next/image';
 import grainImage from '@/assets/images/grain.jpg';
 import Card from '@/components/Card';
+import { Fragment } from 'react';
 
 const testimonials = [
   {
@@ -35,7 +36,7 @@ const testimonials = [
   },
   {
     name: 'Michael Brown',
-    position: 'Director of IT @ MegaCorp',
+    position: 'Director of IT @ Brainwave',
     text: "Adriana's work on our website has been nothing short of exceptional. She's a talented developer who is also a great communicator. We highly recommend her.",
     avatar: memojiAvatar5,
   },
@@ -51,32 +52,36 @@ export const TestimonialsSection = () => {
           description="Don't just take my word for it. See what my clients have to say about my work."
         />
 
-        <div className='mt-16 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] lg:mt-24'>
-          <div className='flex flex-none gap-8'>
-            {testimonials.map((testimonial) => (
-              <Card
-                key={testimonial.name}
-                className='max-w-xs p-6 md:max-w-md md:p-8'
-              >
-                <div className='flex items-center gap-4'>
-                  <div className='inline-flex size-14 flex-shrink-0 items-center justify-center rounded-full bg-light-pink/40'>
-                    <Image
-                      className='max-h-full'
-                      src={testimonial.avatar}
-                      alt={testimonial.name}
-                    />
-                  </div>
-                  <div>
-                    <div className='font-semibold'>{testimonial.name}</div>
-                    <div className='text-sm text-white/40'>
-                      {testimonial.position}
+        <div className='-my-4 mt-12 flex overflow-x-clip py-4 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] lg:mt-20'>
+          <div className='flex flex-none gap-8 pr-8 animate-move-left [animation-duration:90s] hover:[animation-play-state:paused]'>
+            {[...new Array(2)].fill(0).map((_, index) => (
+              <Fragment key={index}>
+                {testimonials.map((testimonial) => (
+                  <Card
+                    key={testimonial.name}
+                    className='max-w-xs p-6 transition duration-300 hover:-rotate-3 md:max-w-md md:p-8'
+                  >
+                    <div className='flex items-center gap-4'>
+                      <div className='inline-flex size-14 flex-shrink-0 items-center justify-center rounded-full bg-light-pink/40'>
+                        <Image
+                          className='max-h-full'
+                          src={testimonial.avatar}
+                          alt={testimonial.name}
+                        />
+                      </div>
+                      <div>
+                        <div className='font-semibold'>{testimonial.name}</div>
+                        <div className='text-sm text-white/40'>
+                          {testimonial.position}
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <p className='mt-4 text-sm md:mt-6 md:text-base'>
-                  {testimonial.text}
-                </p>
-              </Card>
+                    <p className='mt-4 text-sm md:mt-6 md:text-base'>
+                      {testimonial.text}
+                    </p>
+                  </Card>
+                ))}
+              </Fragment>
             ))}
           </div>
         </div>

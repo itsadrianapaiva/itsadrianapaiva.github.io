@@ -37,7 +37,7 @@ export const Footer = () => {
                 <a
                   href={link.href}
                   target='_blank'
-                  className='font-semibold hover:text-medium-pink transition-duration-600'
+                  className='font-semibold hover:text-medium-pink transition duration-600'
                 >
                   {link.title}
                 </a>
