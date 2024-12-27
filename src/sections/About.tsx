@@ -1,3 +1,4 @@
+'use client';
 import Card from '@/components/Card';
 import SectionHeader from '@/components/SectionHeader';
 import Image from 'next/image';
@@ -18,6 +19,8 @@ import mapImage from '@/assets/images/map.png';
 import myMemoji from '@/assets/images/adriana-avatar-laptop.png';
 import CardHeader from '@/components/CardHeader';
 import ToolboxItems from '@/components/ToolboxItems';
+import { motion } from 'framer-motion';
+import { useRef } from 'react';
 
 const toolboxItems = [
   {
@@ -116,6 +119,8 @@ const hobbies = [
 ];
 
 export const AboutSection = () => {
+  const constraintRef = useRef(null);
+
   return (
     <div
       className='py-20 lg:py-28'
@@ -163,21 +168,26 @@ export const AboutSection = () => {
             <Card className='flex h-[320px] flex-col md:col-span-3 lg:col-span-2'>
               <CardHeader
                 title='My Hobbies'
-                description='Explore my interests and hobbies beyond the digital realm.'
+                description='Drag to explore my interests and hobbies beyond the digital realm.'
                 className='px-6 py-6'
               />
-              <div className='relative flex-1'>
+              <div
+                className='relative flex-1'
+                ref={constraintRef}
+              >
                 {hobbies.map((hobby) => (
-                  <div
+                  <motion.div
                     key={hobby.title}
                     className='absolute inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-medium-pink to-intense-pink px-6 py-1.5'
                     style={{ left: hobby.left, top: hobby.top }}
+                    drag
+                    dragConstraints={constraintRef}
                   >
                     <span className='font-medium text-gray-950'>
                       {hobby.title}
                     </span>
                     <span>{hobby.emoji}</span>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </Card>
@@ -188,7 +198,7 @@ export const AboutSection = () => {
                 className='h-full w-full object-cover'
               />
               <div className='absolute left-1/2 top-1/2 size-20 -translate-x-1/2 -translate-y-1/2 rounded-full after:absolute after:inset-0 after:-translate-y-10 after:rounded-full after:outline after:outline-2 after:-outline-offset-2 after:outline-light-pink/30 after:content-[""]'>
-                <div className='absolute left-[16%] -top-[28px] h-[3.5rem] w-[3.5rem] rounded-full bg-gradient-to-r from-medium-pink to-intense-pink animate-ping [animation-duration:2s]'></div>
+                <div className='absolute -top-[28px] left-[16%] h-[3.5rem] w-[3.5rem] animate-ping rounded-full bg-gradient-to-r from-medium-pink to-intense-pink [animation-duration:2s]'></div>
                 <Image
                   src={myMemoji}
                   alt='Memoji'
