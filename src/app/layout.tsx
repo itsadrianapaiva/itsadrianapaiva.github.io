@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html
       lang='en'
-      className='scroll-smooth scrollbar-thumb-medium-brown scrollbar-track-dark-brown'
+      className='scroll-smooth scrollbar-thumb-medium-brown scrollbar-track-dark-brown overflow-x-clip'
     >
       <body
         className={twMerge(
