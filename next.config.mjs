@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-
+  output: 'export',
   // Set up basePath and assetPrefix for GitHub Pages deployment
   basePath: '/itsadrianapaiva.github.io', // Replace with your actual repository name
   assetPrefix: '/itsadrianapaiva.github.io/', // Replace with your actual repository name
