@@ -14,7 +14,12 @@ export const metadata: Metadata = {
   title: 'Adriana Paiva Portfolio',
   description: 'Software developer with a marketer heart',
   icons: {
-    icon: 'favicon.svg',
+    icon: [
+      {
+        url: '/favicon.svg',
+        type: 'image/svg+xml',
+      },
+    ],
   },
 };
 
