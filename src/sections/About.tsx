@@ -84,7 +84,7 @@ const hobbies = [
     title: 'Family Time',
     emoji: '👨‍👩‍👦',
     left: '50%',
-    top: '5%',
+    top: '1%',
   },
   {
     title: 'Fashion',
@@ -96,7 +96,7 @@ const hobbies = [
     title: 'Photography',
     emoji: '📸',
     left: '1.5%',
-    top: '35%',
+    top: '30%',
   },
   {
     title: 'Nature',
@@ -108,13 +108,25 @@ const hobbies = [
     title: 'Journaling',
     emoji: '📓',
     left: '5%',
-    top: '65%',
+    top: '68%',
+  },
+  {
+    title: 'K-dramas',
+    emoji: '📺',
+    left: '3%',
+    top: '55%',
   },
   {
     title: 'Traveling',
     emoji: '✈',
     left: '45%',
-    top: '70%',
+    top: '60%',
+  },
+  {
+    title: 'Video Game',
+    emoji: '🎮',
+    left: '55%',
+    top: '80%',
   },
 ];
 

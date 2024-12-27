@@ -41,6 +41,7 @@ const config: Config = {
         'ping-large': 'ping-large 1s ease-in-out infinite',
         'move-left': 'move-left 1s linear infinite',
         'move-right': 'move-right 1s linear infinite',
+        'appear': 'appear 1s ease-in-out forwards',
       },
       keyframes: {
         'ping-large': {
@@ -65,6 +66,16 @@ const config: Config = {
             transform: 'translateX(0%)',
           },
         },
+        'appear': {
+          '0%': {
+            opacity: '0',
+            scale: '0.5s'
+          },
+          '100%': {
+            opacity: '1',
+            scale: '1'
+          },
+        }
       },
     },
     plugins: [],

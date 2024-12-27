@@ -8,6 +8,7 @@ import grainImage from '@/assets/images/grain.jpg';
 import SectionHeader from '@/components/SectionHeader';
 import Card from '@/components/Card';
 import portfolioCodeImage from '@/assets/images/portfolioCodeImage.png';
+import { motion } from 'framer-motion';
 
 interface PortfolioProjects {
   company: string;
@@ -47,7 +48,7 @@ const portfolioProjects: PortfolioProjects[] = [
       { title: 'Expanded customer reach by 35%' },
       { title: 'Increased brand awareness by 15%' },
     ],
-    link: 'https://youtu.be/7hi5zwO75yc',
+    link: 'https://github.com/itsadrianapaiva/',
     image: lightSaasLandingPage,
     stack: [
       { title: 'TypeScript' },
