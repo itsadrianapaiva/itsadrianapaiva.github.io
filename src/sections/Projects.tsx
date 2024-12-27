@@ -34,9 +34,10 @@ const portfolioProjects: PortfolioProjects[] = [
     image: dreammakersLandingPage,
     stack: [
       { title: 'TypeScript' },
-      { title: 'Next.js' },
+      { title: 'React.js' },
       { title: 'Tailwind CSS' },
       { title: 'Node.js' },
+      { title: 'Cloudinary' },
     ],
   },
   {
