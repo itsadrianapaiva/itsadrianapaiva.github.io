@@ -125,7 +125,7 @@ const hobbies = [
   {
     title: 'Video Game',
     emoji: '🎮',
-    left: '55%',
+    left: '45%',
     top: '80%',
   },
 ];
@@ -195,7 +195,7 @@ export const AboutSection = () => {
                     drag
                     dragConstraints={constraintRef}
                   >
-                    <span className='font-medium text-gray-950'>
+                    <span className='font-medium text-gray-950 w-max'>
                       {hobby.title}
                     </span>
                     <span>{hobby.emoji}</span>

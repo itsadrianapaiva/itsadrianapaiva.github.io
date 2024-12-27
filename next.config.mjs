@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  // Set up basePath and assetPrefix for GitHub Pages deployment
-  basePath: '/itsadrianapaiva.github.io', // Replace with your actual repository name
-  assetPrefix: '/itsadrianapaiva.github.io/', // Replace with your actual repository name
+    // Only use these settings in production
+    ...(process.env.NODE_ENV === 'production' ? {
+      output: 'export',
+      basePath: '/itsadrianapaiva.github.io',
+      assetPrefix: '/itsadrianapaiva.github.io/',
+    } : {}),
 
   webpack(config) {
     // Grab the existing rule that handles SVG imports
