@@ -1,3 +1,4 @@
+"use client";
 import adrianaavatar from '@/assets/images/adrianaavatar.png';
 import Image from 'next/image';
 import ArrowDown from '@/assets/icons/arrow-down.svg';
@@ -5,6 +6,7 @@ import grainImage from '@/assets/images/grain.jpg';
 import StarIcon from '@/assets/icons/star.svg';
 import HeroOrbit from '@/components/HeroOrbit';
 import SparkleIcon from '@/assets/icons/sparkle.svg';
+import { motion } from 'framer-motion';
 
 export const HeroSection = () => {
   return (
@@ -128,6 +130,11 @@ export const HeroSection = () => {
         </HeroOrbit>
       </div>
 
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
+      >
       <div className='container animation-appear'>
         <div className='flex flex-col items-center'>
           <Image
@@ -167,6 +174,7 @@ export const HeroSection = () => {
           </button>
         </div>
       </div>
+      </motion.div>
     </div>
   );
 };

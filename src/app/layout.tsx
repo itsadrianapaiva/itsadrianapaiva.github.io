@@ -13,6 +13,9 @@ const calistoga = Calistoga({
 export const metadata: Metadata = {
   title: 'Adriana Paiva Portfolio',
   description: 'Software developer with a marketer heart',
+  icons: {
+    icon: 'favicon.svg',
+  },
 };
 
 export default function RootLayout({
@@ -21,12 +24,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' className="scroll-smooth">
+    <html
+      lang='en'
+      className='scroll-smooth scrollbar-thumb-medium-brown scrollbar-track-dark-brown'
+    >
       <body
         className={twMerge(
           inter.variable,
           calistoga.variable,
-          'bg-dark-brown font-sans text-white antialiased overflow-x-clip'
+          'overflow-x-clip bg-dark-brown font-sans text-white antialiased'
         )}
       >
         {children}

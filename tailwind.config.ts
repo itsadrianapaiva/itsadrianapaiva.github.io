@@ -37,11 +37,15 @@ const config: Config = {
         'dark-brown': '#2A221E',
         'black-brown': '#1A120B',
       },
+      scrollbar: {
+        thumb: '#3a302b',
+        track: '#2A221E',
+      },
       animation: {
         'ping-large': 'ping-large 1s ease-in-out infinite',
         'move-left': 'move-left 1s linear infinite',
         'move-right': 'move-right 1s linear infinite',
-        'appear': 'appear 1s ease-in-out forwards',
+        appear: 'appear 1s ease-in-out forwards',
       },
       keyframes: {
         'ping-large': {
@@ -66,19 +70,23 @@ const config: Config = {
             transform: 'translateX(0%)',
           },
         },
-        'appear': {
+        appear: {
           '0%': {
             opacity: '0',
-            scale: '0.5s'
+            scale: '0.5s',
           },
           '100%': {
             opacity: '1',
-            scale: '1'
+            scale: '1',
           },
-        }
+        },
       },
     },
-    plugins: [],
+    plugins: [
+      require('tailwind-scrollbar')({
+        nocompatible: true, 
+      }),
+    ],
   },
 };
 export default config;
