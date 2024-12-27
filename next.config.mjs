@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // Only use these settings in production
-    ...(process.env.NODE_ENV === 'production' ? {
+    
       output: 'export',
       basePath: '/itsadrianapaiva.github.io',
       assetPrefix: '/itsadrianapaiva.github.io/',
-    } : {}),
 
   webpack(config) {
     // Grab the existing rule that handles SVG imports
