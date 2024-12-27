@@ -80,7 +80,7 @@ const portfolioProjects: PortfolioProjects[] = [
 export const ProjectsSection = () => {
   return (
     <section className='pb-16 lg:py-24' id="projects">
-      <div className='container'>
+      <div className='container relative h-full'>
         <SectionHeader
           eyebrow='Real-world Results'
           title='Featured Projects'
@@ -88,10 +88,14 @@ export const ProjectsSection = () => {
         />
 
         <div className='mt-10 flex flex-col gap-20 md:mt-20'>
-          {portfolioProjects.map((project) => (
+          {portfolioProjects.map((project, projectIndex) => (
             <Card
               key={project.title}
               className='px-8 pt-8 md:px-10 md:pt-12 lg:px-20 lg:pt-16'
+              style={{ 
+                position: 'sticky',
+                top: `calc(64px + ${projectIndex * 20}px`
+              }}
             >
               <div className='lg:grid lg:grid-cols-2 lg:gap-16'>
                 <div className='lg:pb-16'>
@@ -121,7 +125,7 @@ export const ProjectsSection = () => {
                     href={project.link}
                     target='_blank'
                   >
-                    <button className='mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-white font-semibold text-gray-950 md:w-auto md:px-6'>
+                    <button className='mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-white font-semibold text-gray-950 md:w-auto md:px-6 hover:bg-white/90 transition-duration-600'>
                       <span>Visit site</span>
                       <ArrowUpRightIcon className='size-4' />
                     </button>

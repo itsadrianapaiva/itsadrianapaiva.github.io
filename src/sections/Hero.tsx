@@ -23,12 +23,6 @@ export const HeroSection = () => {
         <div className='hero-ring size-[1270px]'></div>
         <div className='hero-ring size-[1470px]'></div>
 
-        {/*size: number;
-  rotation: number;
-  shouldOrbit?: boolean;
-  shouldSpin?: boolean;
-  spinDuration?: string;
-  orbitDuration?: string; */}
         <HeroOrbit
           size={630}
           rotation={-314}
@@ -163,13 +157,13 @@ export const HeroSection = () => {
         </div>
 
         <div className='mt-8 flex flex-col items-center justify-center gap-4 md:flex-row'>
-          <button className='inline-flex h-12 items-center gap-2 rounded-xl border border-white/15 px-6'>
-            <span className='font-semibold'>Explore My Work</span>
+          <button className='inline-flex h-12 items-center gap-2 rounded-xl border border-light-pink/15 px-6 z-10 hover:bg-light-brown/15 transition-duration-600'>
+            <a href="#projects" className='font-semibold'>Explore My Work</a>
             <ArrowDown className='size-4' />
           </button>
-          <button className='border-dark-pink bg-dark-pink inline-flex h-12 items-center gap-2 rounded-xl border px-6 text-gray-900'>
+          <button className='border-dark-pink bg-dark-pink inline-flex h-12 items-center gap-2 rounded-xl border px-6 text-gray-900 z-10 hover:bg-dark-pink/80 transition-duration-600'>
             <span>👋</span>
-            <span className='font-semibold'>Let&apos;s Connect</span>
+            <a href="#contact" className='font-semibold'>Let&apos;s Connect</a>
           </button>
         </div>
       </div>

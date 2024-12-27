@@ -33,7 +33,7 @@ const config: Config = {
         'red-pink': '#D80032',
         'burned-orange': '#B3541E',
         'light-brown': '#705C53',
-        'medium-brown': '#362222',
+        'medium-brown': '#3a302b',
         'dark-brown': '#2A221E',
         'black-brown': '#1A120B',
       },
