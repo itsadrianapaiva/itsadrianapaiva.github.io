@@ -1,17 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     
-      output: 'export',
-      basePath: '/itsadrianapaiva.github.io',
-      assetPrefix: '/itsadrianapaiva.github.io/',
-
-//for npm run dev
-// Only use these settings in production
-//...(process.env.NODE_ENV === 'production' ? {
-//  output: 'export',
-//  basePath: '/itsadrianapaiva.github.io',
-//  assetPrefix: '/itsadrianapaiva.github.io/',
-//} : {}),
+  ...(process.env.NODE_ENV === 'production' 
+    ? {
+        output: 'export',
+        basePath: '/itsadrianapaiva.github.io',
+        assetPrefix: '/itsadrianapaiva.github.io/',
+        images: {
+          unoptimized: true,
+        }
+      } 
+    : {
+        // Development config - keep it minimal
+        images: {
+          unoptimized: true,
+        }
+      }
+  ),
 
   webpack(config) {
     // Grab the existing rule that handles SVG imports
