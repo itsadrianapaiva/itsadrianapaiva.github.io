@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+
+  // Set up basePath and assetPrefix for GitHub Pages deployment
+  basePath: '/itsadrianapaiva.github.io', // Replace with your actual repository name
+  assetPrefix: '/itsadrianapaiva.github.io/', // Replace with your actual repository name
+
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
