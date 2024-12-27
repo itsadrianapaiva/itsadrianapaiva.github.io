@@ -1,6 +1,5 @@
 import Card from '@/components/Card';
 import SectionHeader from '@/components/SectionHeader';
-import StarIcon from '@/assets/icons/star.svg';
 import Image from 'next/image';
 import bookCover from '@/assets/images/book.jpg';
 import JavaScriptIcon from '@/assets/icons/square-js.svg';
@@ -15,7 +14,6 @@ import NodeIcon from '@/assets/icons/nodejs.svg';
 import GitIcon from '@/assets/icons/gitIcon.svg';
 import TypeScriptIcon from '@/assets/icons/typescriptIcon.svg';
 import CloudIcon from '@/assets/icons/googlecloud.svg';
-import TechIcon from '@/components/TechIcon';
 import mapImage from '@/assets/images/map.png';
 import myMemoji from '@/assets/images/adriana-avatar-laptop.png';
 import CardHeader from '@/components/CardHeader';
@@ -119,7 +117,10 @@ const hobbies = [
 
 export const AboutSection = () => {
   return (
-    <div className='py-20 lg:py-28' id="about">
+    <div
+      className='py-20 lg:py-28'
+      id='about'
+    >
       <div className='container'>
         <SectionHeader
           eyebrow='About Me'
@@ -129,7 +130,7 @@ export const AboutSection = () => {
 
         <div className='mt-20 flex flex-col gap-8'>
           <div className='grid grid-cols-1 gap-y-8 md:grid-cols-5 md:gap-8 lg:grid-cols-3'>
-            <Card className='md:col-span-2 h-[320px] lg:col-span-1'>
+            <Card className='h-[320px] md:col-span-2 lg:col-span-1'>
               <CardHeader
                 title='My Reads'
                 description='Explore the books shaping my perspectives.'
@@ -142,25 +143,24 @@ export const AboutSection = () => {
                 />
               </div>
             </Card>
-            <Card className='md:col-span-3 h-[320px] lg:col-span-2'>
+            <Card className='h-[320px] md:col-span-3 lg:col-span-2'>
               <CardHeader
                 title='My Toolbox'
                 description='Explore the technologies and tools that I use to craft exceptional digital experiences.'
-                className=''
               />
               <ToolboxItems
                 items={toolboxItems}
-                className=''
-                itemsWrapperClassName='-translate-x-1/2'
+                itemsWrapperClassName='animate-move-right [animation-duration:20s]'
               />
               <ToolboxItems
                 items={toolboxItems}
                 className='mt-6'
+                itemsWrapperClassName='animate-move-left [animation-duration:30s]'
               />
             </Card>
           </div>
-          <div className='grid grid-cols-1 md:grid-cols-5 gap-y-8 md:gap-8 lg:grid-cols-3'>
-            <Card className='md:col-span-3 flex h-[320px] flex-col lg:col-span-2'>
+          <div className='grid grid-cols-1 gap-y-8 md:grid-cols-5 md:gap-8 lg:grid-cols-3'>
+            <Card className='flex h-[320px] flex-col md:col-span-3 lg:col-span-2'>
               <CardHeader
                 title='My Hobbies'
                 description='Explore my interests and hobbies beyond the digital realm.'
@@ -170,7 +170,7 @@ export const AboutSection = () => {
                 {hobbies.map((hobby) => (
                   <div
                     key={hobby.title}
-                    className='to-intense-pink absolute inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-medium-pink px-6 py-1.5'
+                    className='absolute inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-medium-pink to-intense-pink px-6 py-1.5'
                     style={{ left: hobby.left, top: hobby.top }}
                   >
                     <span className='font-medium text-gray-950'>
@@ -181,13 +181,14 @@ export const AboutSection = () => {
                 ))}
               </div>
             </Card>
-            <Card className='relative md:col-span-2 h-[320px] lg:col-span-1'>
+            <Card className='relative h-[320px] md:col-span-2 lg:col-span-1'>
               <Image
                 src={mapImage}
                 alt='Map'
                 className='h-full w-full object-cover'
               />
               <div className='absolute left-1/2 top-1/2 size-20 -translate-x-1/2 -translate-y-1/2 rounded-full after:absolute after:inset-0 after:-translate-y-10 after:rounded-full after:outline after:outline-2 after:-outline-offset-2 after:outline-light-pink/30 after:content-[""]'>
+                <div className='absolute left-[16%] -top-[28px] h-[3.5rem] w-[3.5rem] rounded-full bg-gradient-to-r from-medium-pink to-intense-pink animate-ping [animation-duration:2s]'></div>
                 <Image
                   src={myMemoji}
                   alt='Memoji'
