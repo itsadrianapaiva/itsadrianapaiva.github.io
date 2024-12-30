@@ -1,14 +1,11 @@
-import lightSaasLandingPage from '@/assets/images/light-saas-landing-page.png';
-import aiStartupLandingPage from '@/assets/images/ai-startup-landing-page.png';
 import dreammakersLandingPage from '@/assets/images/dreammakers-landing-page.png';
 import Image from 'next/image';
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
-import grainImage from '@/assets/images/grain.jpg';
 import SectionHeader from '@/components/SectionHeader';
 import Card from '@/components/Card';
 import portfolioCodeImage from '@/assets/images/portfolioCodeImage.png';
-import { motion } from 'framer-motion';
+import EcommercePage from '@/assets/images/ecommerce-page.png';
 
 interface PortfolioProjects {
   company: string;
@@ -43,19 +40,20 @@ const portfolioProjects: PortfolioProjects[] = [
   {
     company: 'Independent Consultant',
     year: '2024',
-    title: 'Light Saas Landing Page',
+    title: 'Clothing E-Commerce Platform',
     results: [
       { title: 'Boosted sales by 20%' },
-      { title: 'Expanded customer reach by 35%' },
-      { title: 'Increased brand awareness by 15%' },
+      { title: 'improved user experience by 50%' },
+      { title: 'Increased operational efficiency by 60%' },
     ],
     link: 'https://github.com/itsadrianapaiva/',
-    image: lightSaasLandingPage,
+    image: EcommercePage,
     stack: [
-      { title: 'TypeScript' },
-      { title: 'Next.js' },
-      { title: 'Tailwind CSS' },
-      { title: 'Framer Motion' },
+      { title: 'JavaScript' },
+      { title: 'MongoDB' },
+      { title: 'Express.js' },
+      { title: 'React.js' },
+      { title: 'Node.js' },
     ],
   },
   {
@@ -74,7 +72,7 @@ const portfolioProjects: PortfolioProjects[] = [
       { title: 'React.js' },
       { title: 'Next.js' },
       { title: 'Tailwind CSS' },
-      { title: 'GitHub' },
+      { title: 'Framer Motion' },
     ],
   },
 ];
