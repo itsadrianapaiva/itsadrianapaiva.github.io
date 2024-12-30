@@ -58,6 +58,18 @@ export default function RootLayout({
           content="Screenshot of Adriana Paiva's portfolio website showcasing web development projects"
         />
         <meta
+          property='og:image:type'
+          content='image/png'
+        />
+        <meta
+          property='og:image:width'
+          content='1200'
+        />
+        <meta
+          property='og:image:height'
+          content='630'
+        />
+        <meta
           property='og:type'
           content='website'
         />
