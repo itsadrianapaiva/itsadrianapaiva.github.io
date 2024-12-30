@@ -43,7 +43,7 @@ const portfolioProjects: PortfolioProjects[] = [
     title: 'Clothing E-Commerce Platform',
     results: [
       { title: 'Boosted sales by 20%' },
-      { title: 'improved user experience by 50%' },
+      { title: 'Improved user experience by 50%' },
       { title: 'Increased operational efficiency by 60%' },
     ],
     link: 'https://github.com/itsadrianapaiva/',
