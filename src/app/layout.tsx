@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, Calistoga } from 'next/font/google';
 import './globals.css';
 import { twMerge } from 'tailwind-merge';
+import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 const calistoga = Calistoga({
@@ -16,8 +17,8 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/favicon.svg',
-        type: 'image/svg+xml',
+        url: '/favicon.png',
+        type: 'image/png+xml',
       },
     ],
   },
@@ -31,8 +32,40 @@ export default function RootLayout({
   return (
     <html
       lang='en'
-      className='scroll-smooth scrollbar-thumb-medium-brown scrollbar-track-dark-brown overflow-x-clip'
+      className='scrollbar-thumb-medium-brown scrollbar-track-dark-brown overflow-x-clip scroll-smooth'
     >
+      <Head>
+        <link
+          rel='icon'
+          type='image/png+xml'
+          href='/favicon.png'
+        />
+
+        <meta
+          property='og:Adriana Paiva'
+          content='Adriana Paiva Portfolio'
+        />
+        <meta
+          property='og:description'
+          content='Software developer with a marketer heart'
+        />
+        <meta
+          property='og:image'
+          content='/og-image.png'
+        />
+        <meta
+          property='og:image:alt'
+          content="Screenshot of Adriana Paiva's portfolio website showcasing web development projects"
+        />
+        <meta
+          property='og:type'
+          content='website'
+        />
+        <meta
+          property='og:url'
+          content='https://itsadrianapaiva.com'
+        />
+      </Head>
       <body
         className={twMerge(
           inter.variable,
