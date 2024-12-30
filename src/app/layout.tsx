@@ -51,7 +51,7 @@ export default function RootLayout({
         />
         <meta
           property='og:image'
-          content='/og-image.png'
+          content='https://itsadrianapaiva.com/og-image.png'
         />
         <meta
           property='og:image:alt'
