@@ -2,17 +2,17 @@ import StarIcon from '@/assets/icons/star.svg';
 import { Fragment } from 'react';
 
 const words = [
-  'Performant',
-  'Accessible',
-  'Secure',
-  'Interactive',
-  'Scalable',
-  'User Friendly',
-  'Responsive',
-  'Maintainable',
-  'Search Optimized',
-  'Usable',
-  'Reliable',
+  "Communication",
+  "Problem-Solving",
+  "Team Collaboration",
+  "Leadership",
+  "Time Management",
+  "Adaptability",
+  "Creativity",
+  "Strategic Thinking",
+  "Conflict Resolution",
+  "Attention to Detail",
+  "Empathy",
 ];
 
 export const TapeSection = () => {

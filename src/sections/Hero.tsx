@@ -157,8 +157,8 @@ export const HeroSection = () => {
             Undoubtedly Good at Web Solutions
           </h1>
           <p className='mt-4 text-center text-white/60 md:text-lg'>
-            Specialized in front-end development using TypeScript, ReactJS and
-            NodeJS. Combining my passion for coding and 8 years in the US
+            Specialized in full-stack development using TypeScript, React and
+            Node.js. Combining my passion for coding and 8 years in the US
             marketing industry to build exceptional user-centered solutions.
           </p>
         </div>

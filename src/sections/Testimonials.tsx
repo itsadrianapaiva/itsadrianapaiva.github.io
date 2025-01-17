@@ -10,16 +10,10 @@ import Card from '@/components/Card';
 import { Fragment } from 'react';
 
 const testimonials = [
-  {
-    name: 'Alex Turner',
-    position: 'Marketing Manager @ TechStartups',
-    text: "Adriana was instrumental in transforming our website into a powerful marketing tool. Her attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
-    avatar: memojiAvatar1,
-  },
-  {
-    name: 'Olivia Green',
-    position: 'Head of Design @ GreenLeaf',
-    text: 'Working with Adriana was a pleasure. Her expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.',
+    {
+    name: 'Kaitlyn Garcia',
+    position: 'Sr. Marketing Specialist @ Loud and Live',
+    text: 'Working with Adriana was a pleasure. Her expertise in software development brought our designs to life in a way we never imagined. The website has exceeded our expectations.',
     avatar: memojiAvatar2,
   },
   {
@@ -29,9 +23,9 @@ const testimonials = [
     avatar: memojiAvatar3,
   },
   {
-    name: 'Emily Carter',
-    position: 'Product Manager @ GlobalTech',
-    text: "Adriana is a true frontend wizard. She took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
+    name: 'Pauline Wolda',
+    position: 'Product Manager @ ArchPoint Group',
+    text: "Adriana is a true backend wizard. She took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
     avatar: memojiAvatar4,
   },
   {
