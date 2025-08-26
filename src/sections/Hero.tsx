@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import adrianaavatar from '@/assets/images/adrianaavatar.png';
 import Image from 'next/image';
 import ArrowDown from '@/assets/icons/arrow-down.svg';
@@ -75,7 +75,7 @@ export const HeroSection = () => {
           shouldSpin
           spinDuration='6s'
         >
-          <StarIcon className='text-dark-pink size-12' />
+          <StarIcon className='size-12 text-dark-pink' />
         </HeroOrbit>
 
         <HeroOrbit
@@ -86,7 +86,7 @@ export const HeroSection = () => {
           shouldSpin
           spinDuration='6s'
         >
-          <StarIcon className='text-red-pink size-8' />
+          <StarIcon className='size-8 text-red-pink' />
         </HeroOrbit>
 
         <HeroOrbit
@@ -135,45 +135,58 @@ export const HeroSection = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
-      <div className='container animation-appear'>
-        <div className='flex flex-col items-center'>
-          <Image
-            src={adrianaavatar}
-            className='size-[150px]'
-            alt='Woman avatar'
-          />
-          <div className='border-black-brown bg-black-brown inline-flex items-center gap-4 rounded-lg border px-4 py-1.5'>
-            <div className='relative size-2.5 rounded-full bg-green-500'>
-              <div className='animate-ping-large absolute inset-0 rounded-full bg-green-500'></div>
-            </div>
-            <div className='text-sm font-medium'>
-              This Software Developer is Available
+        <div className='animation-appear container'>
+          <div className='flex flex-col items-center'>
+            <Image
+              src={adrianaavatar}
+              className='size-[150px]'
+              alt='Woman avatar'
+            />
+            <div className='inline-flex items-center gap-4 rounded-lg border border-black-brown bg-black-brown px-4 py-1.5'>
+              <div className='relative size-2.5 rounded-full bg-red-700'>
+                <div className='absolute inset-0 animate-ping-large rounded-full bg-red-700'></div>
+              </div>
+              <div className='text-sm font-medium'>
+                This Software Engineer is Not Available
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className='mx-auto max-w-lg'>
-          <h1 className='mt-8 text-center font-serif text-3xl tracking-wide md:text-5xl'>
-            Undoubtedly Good at Web Solutions
-          </h1>
-          <p className='mt-4 text-center text-white/60 md:text-lg'>
-            Specialized in full-stack development using TypeScript, React and
-            Node.js. Combining my passion for coding and 8 years in the US
-            marketing industry to build exceptional user-centered solutions.
-          </p>
-        </div>
+          <div className='mx-auto max-w-lg'>
+            <h1 className='mt-8 text-center font-serif text-3xl tracking-wide md:text-5xl'>
+              Undoubtedly Good at Designing Systems
+            </h1>
+            <p className='mt-4 text-center text-white/60 md:text-lg'>
+              Specialized in full-stack development using TypeScript, React and
+              Node.js. Combining my passion for coding and 8 years in the US
+              marketing industry to build exceptional user-centered solutions.
+            </p>
+            <p className='md:text-normal mt-4 text-center text-white/60'>
+              Currently working at Céu Construction Lda.
+            </p>
+          </div>
 
-        <div className='mt-8 flex flex-col items-center justify-center gap-4 md:flex-row'>
-          <button className='inline-flex h-12 items-center gap-2 rounded-xl border border-light-pink/15 px-6 z-10 hover:bg-light-brown/15 transition duration-600'>
-            <a href="#projects" className='font-semibold'>Explore My Work</a>
-            <ArrowDown className='size-4' />
-          </button>
-          <button className='border-dark-pink bg-dark-pink inline-flex h-12 items-center gap-2 rounded-xl border px-6 text-gray-900 z-10 hover:bg-dark-pink/80 transition duration-600'>
-            <span>👋</span>
-            <a href="#contact" className='font-semibold'>Let&apos;s Connect</a>
-          </button>
+          <div className='mt-8 flex flex-col items-center justify-center gap-4 md:flex-row'>
+            <button className='duration-600 z-10 inline-flex h-12 items-center gap-2 rounded-xl border border-light-pink/15 px-6 transition hover:bg-light-brown/15'>
+              <a
+                href='#projects'
+                className='font-semibold'
+              >
+                Explore My Work
+              </a>
+              <ArrowDown className='size-4' />
+            </button>
+            <button className='duration-600 z-10 inline-flex h-12 items-center gap-2 rounded-xl border border-dark-pink bg-dark-pink px-6 text-gray-900 transition hover:bg-dark-pink/80'>
+              <span>👋</span>
+              <a
+                href='#contact'
+                className='font-semibold'
+              >
+                Let&apos;s Connect
+              </a>
+            </button>
+          </div>
         </div>
-      </div>
       </motion.div>
     </div>
   );
