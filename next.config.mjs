@@ -1,22 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    
-  ...(process.env.NODE_ENV === 'production' 
-    ? {
-        output: 'export',
-        basePath: '/itsadrianapaiva.github.io',
-        assetPrefix: '/itsadrianapaiva.github.io/',
-        images: {
-          unoptimized: true,
-        }
-      } 
-    : {
-        // Development config - keep it minimal
-        images: {
-          unoptimized: true,
-        }
-      }
-  ),
+  // Always export a static site (for GitHub Pages)
+  output: 'export',
+
+  // GitHub Pages cannot run the Next image optimizer
+  images: {
+    unoptimized: true,
+  },
 
   webpack(config) {
     // Grab the existing rule that handles SVG imports
