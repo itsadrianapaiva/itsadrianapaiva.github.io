@@ -48,7 +48,7 @@ const portfolioProjects: PortfolioProjects[] = [
   {
     company: 'Céu Construction',
     year: '2025',
-    title: 'Business website',
+    title: 'Business Website',
     results: [
       { title: 'Boosted organic traffic and inbound leads by 40%+' },
       { title: 'Reduced manual lead qualification time by 30%' },
