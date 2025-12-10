@@ -157,9 +157,7 @@ export const HeroSection = () => {
               Undoubtedly Good at Designing Systems
             </h1>
             <p className='mt-4 text-center text-white/60 md:text-lg'>
-              Specialized in full-stack development using TypeScript, React and
-              Node.js. Combining my passion for coding and 8 years in the US
-              marketing industry to build exceptional user-centered solutions.
+              I design and implement backend architectures that power real products, from ecommerce platforms to AI driven solutions. I focus on clean systems, stable deployments, and measurable business impact.
             </p>
             <p className='md:text-normal mt-4 text-center text-white/60'>
               Currently working at Céu Construction Lda.

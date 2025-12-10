@@ -1,19 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Always export a static site (for GitHub Pages)
-  output: 'export',
+  output: "export",
 
   // GitHub Pages cannot run the Next image optimizer
   images: {
     unoptimized: true,
   },
 
+  // Custom webpack configuration
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
-      rule.test?.test?.('.svg')
+      rule.test?.test?.(".svg")
     );
 
+    // Add rules for handling SVGs
     config.module.rules.push(
       // Reapply the existing rule, but only for svg imports ending in ?url
       {
@@ -25,14 +27,16 @@ const nextConfig = {
       {
         test: /\.svg$/i,
         issuer: fileLoaderRule.issuer,
-        resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/] }, // exclude if *.svg?url
+        resourceQuery: {
+          not: [...fileLoaderRule.resourceQuery.not, /url/], // exclude if *.svg?url
+        },
         use: {
-          loader: '@svgr/webpack',
+          loader: "@svgr/webpack",
           options: {
             svgoConfig: {
               plugins: [
                 {
-                  name: 'preset-default',
+                  name: "preset-default",
                   params: {
                     overrides: {
                       removeViewBox: false,
@@ -46,7 +50,7 @@ const nextConfig = {
       }
     );
 
-    // Modify the file loader rule to ignore *.svg, since we have it handled now.
+    // Modify the file loader rule to ignore *.svg, since we handle it above
     fileLoaderRule.exclude = /\.svg$/i;
 
     return config;
