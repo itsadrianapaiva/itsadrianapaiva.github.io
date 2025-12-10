@@ -11,7 +11,7 @@ const footerLinks = [
   },
   {
     title: 'Instagram',
-    href: 'https://www.instagram.com/itsadrianapaiva',
+    href: 'https://www.instagram.com/sunshinetechie',
   },
   {
     title: 'Threads',

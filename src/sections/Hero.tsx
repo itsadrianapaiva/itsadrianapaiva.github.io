@@ -7,6 +7,7 @@ import StarIcon from '@/assets/icons/star.svg';
 import HeroOrbit from '@/components/HeroOrbit';
 import SparkleIcon from '@/assets/icons/sparkle.svg';
 import { motion } from 'framer-motion';
+import { ScrollLink } from '@/components/ScrollLink';
 
 export const HeroSection = () => {
   return (
@@ -165,24 +166,20 @@ export const HeroSection = () => {
           </div>
 
           <div className='mt-8 flex flex-col items-center justify-center gap-4 md:flex-row'>
-            <button className='duration-600 z-10 inline-flex h-12 items-center gap-2 rounded-xl border border-light-pink/15 px-6 transition hover:bg-light-brown/15'>
-              <a
-                href='#projects'
-                className='font-semibold'
-              >
-                Explore My Work
-              </a>
+            <ScrollLink
+              targetId='projects'
+              className='duration-600 z-10 inline-flex h-12 items-center gap-2 rounded-xl border border-light-pink/15 px-6 font-semibold transition hover:bg-light-brown/15'
+            >
+              Explore My Work
               <ArrowDown className='size-4' />
-            </button>
-            <button className='duration-600 z-10 inline-flex h-12 items-center gap-2 rounded-xl border border-dark-pink bg-dark-pink px-6 text-gray-900 transition hover:bg-dark-pink/80'>
+            </ScrollLink>
+            <ScrollLink
+              targetId='contact'
+              className='duration-600 z-10 inline-flex h-12 items-center gap-2 rounded-xl border border-dark-pink bg-dark-pink px-6 font-semibold text-gray-900 transition hover:bg-dark-pink/80'
+            >
               <span>👋</span>
-              <a
-                href='#contact'
-                className='font-semibold'
-              >
-                Let&apos;s Connect
-              </a>
-            </button>
+              Let&apos;s Connect
+            </ScrollLink>
           </div>
         </div>
       </motion.div>

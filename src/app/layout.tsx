@@ -13,7 +13,7 @@ const calistoga = Calistoga({
 
 export const metadata: Metadata = {
   title: 'Adriana Paiva Portfolio',
-  description: 'Software developer with a marketer heart',
+  description: 'Software engineer focused on backend',
   icons: {
     icon: [
       {
@@ -47,7 +47,7 @@ export default function RootLayout({
         />
         <meta
           property='og:description'
-          content='Software developer with a marketer heart'
+          content='Software engineer with a marketer heart'
         />
         <meta
           property='og:image'
