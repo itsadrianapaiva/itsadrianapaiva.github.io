@@ -9,6 +9,12 @@ import Card from "@/components/Card";
 import { Fragment } from "react";
 
 const testimonials = [
+   {
+    name: "J.R.",
+    position: "CEO @ Céu Construction",
+    text: "I've been really impressed at Adriana's work on our website and production system. She is very organized and great at explaning technical decisions to non-technical people. She thinks systematically and her business knowledge was invaluable for the success of the project.",
+    avatar: memojiAvatar5,
+  },
   {
     name: "Kaitlyn Garcia",
     position: "Sr. Marketing Specialist @ Loud and Live",
