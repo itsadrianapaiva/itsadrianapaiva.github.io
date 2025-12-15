@@ -29,18 +29,18 @@ const portfolioProjects: PortfolioProjects[] = [
       { title: 'Reduced manual admin work by 40%' },
       {
         title:
-          'Enabled full purchase tracking, attributing 35%+ of revenue directly to ads',
+          'Reduced release time by ~50%',
       },
       {
         title:
-          'Improved platform performance to consistent sub-2.5s LCP with zero downtime',
+          'Reduced production defects by ~30%',
       },
     ],
     link: 'https://amr-rentals.com',
     image: amr,
     stack: [
       { title: 'TypeScript' },
-      { title: 'Next.js' },
+      { title: 'Node.js' },
       { title: 'PostgreSQL' },
       { title: 'Stripe API' },
     ],
@@ -48,20 +48,16 @@ const portfolioProjects: PortfolioProjects[] = [
   {
     company: 'Céu Construction',
     year: '2025',
-    title: 'Business Website',
+    title: 'Business Platform',
     results: [
-      { title: 'Boosted organic traffic and inbound leads by 40%+' },
+      { title: 'Supported zero-downtime deployments' },
       { title: 'Reduced manual lead qualification time by 30%' },
-      {
-        title:
-          'Improved Lighthouse scores and loading performance across core pages',
-      },
     ],
     link: 'https://ceuconstruction.com',
     image: ceuconstruction,
     stack: [
       { title: 'TypeScript' },
-      { title: 'Next.js' },
+      { title: 'Node.js' },
       { title: 'Github Actions' },
       { title: 'Netlify' },
     ],
@@ -69,54 +65,41 @@ const portfolioProjects: PortfolioProjects[] = [
   {
     company: 'Bravera Creative',
     year: '2025',
-    title: 'Marketing Agency Website',
-    results: [
-      { title: 'Reduced bounce rate by 45% through UX optimization' },
-      { title: 'Achieved 99 Lighthouse score on performance & SEO' },
-      { title: 'Enabled multilingual support with smooth transitions' },
-    ],
+    title: 'Marketing Agency Platform',
+    results: [    ],
     link: 'https://braveracreative.com',
     image: bravera,
     stack: [
       { title: 'TypeScript' },
       { title: 'Supabase' },
-      { title: 'Next.js' },
-      { title: 'GSAP' },
+      { title: 'Node.js' },
+      { title: 'Resend' },
     ],
   },
   {
     company: 'P Quatro Construtora',
     year: '2024',
-    title: 'Business Landing Page',
+    title: 'Business Platform',
     results: [
-      { title: 'Boosted client inquiries by 35%' },
-      { title: 'Increased business visibility by 30%' },
-      { title: 'Improved lead conversion by 70%' },
+    
     ],
     link: 'https://pquatroconstrutora.netlify.app',
     image: pquatro,
     stack: [
       { title: 'JavaScript' },
       { title: 'Next.js' },
-      { title: 'Tailwind CSS' },
-      { title: 'Framer Motion' },
     ],
   },
   {
     company: 'Dream Makers Construction',
     year: '2024',
-    title: 'Business Website',
+    title: 'Business Platform',
     results: [
-      { title: 'Enhanced user experience by 40%' },
-      { title: 'Improved discoverability by 50%' },
-      { title: 'Increased client prospection by 35%' },
     ],
     link: 'https://dreammakersconstruction.ca/',
     image: dreammakersLandingPage,
     stack: [
       { title: 'TypeScript' },
-      { title: 'React.js' },
-      { title: 'Tailwind CSS' },
       { title: 'Node.js' },
       { title: 'Cloudinary' },
     ],
@@ -133,7 +116,7 @@ export const ProjectsSection = () => {
         <SectionHeader
           eyebrow='Real-world Results'
           title='Featured Projects'
-          description='See how I transformed concepts into modern and engaging digital experiences.'
+          description='See how I transformed concepts into seamless integrations.'
         />
 
         <div className='mt-10 flex flex-col gap-20 md:mt-20'>

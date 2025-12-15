@@ -8,11 +8,9 @@ const words = [
   "Leadership",
   "Time Management",
   "Adaptability",
-  "Creativity",
   "Strategic Thinking",
   "Conflict Resolution",
   "Attention to Detail",
-  "Empathy",
 ];
 
 export const TapeSection = () => {

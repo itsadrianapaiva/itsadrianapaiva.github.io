@@ -12,31 +12,25 @@ const testimonials = [
    {
     name: "J.R.",
     position: "CEO @ Céu Construction",
-    text: "I've been really impressed at Adriana's work on our website and production system. She is very organized and great at explaning technical decisions to non-technical people. She thinks systematically and her business knowledge was invaluable for the success of the project.",
+    text: "I've been really impressed at Adriana's work on our production system. She is very organized and great at explaning technical decisions to non-technical people. She thinks systematically and her business knowledge was invaluable for the success of the project.",
     avatar: memojiAvatar5,
   },
   {
     name: "Kaitlyn Garcia",
     position: "Sr. Marketing Specialist @ Loud and Live",
-    text: "Working with Adriana was a pleasure. Her expertise in software development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    text: "Working with Adriana was a pleasure. Her expertise in software development brought our systems to life in a way we never imagined.",
     avatar: memojiAvatar2,
   },
   {
     name: "Gus Reis",
     position: "CEO @ Dream Makers Construction",
-    text: "Adriana's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    text: "Adriana's ability to create seamless integrations is unmatched. Our platform has seen a significant increase in conversions since launching. We couldn't be happier.",
     avatar: memojiAvatar3,
-  },
-  {
-    name: "Pauline Wolda",
-    position: "Product Manager @ ArchPoint Group",
-    text: "Adriana is a true backend wizard. She took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
-    avatar: memojiAvatar4,
   },
   {
     name: "Pedro Polvora",
     position: "CEO @ P Quatro Construtora",
-    text: "Adriana's work on our website has been nothing short of exceptional. She's a talented developer who is also a great communicator. We highly recommend her.",
+    text: "Adriana's work on our backoffice has been nothing short of exceptional. She's a talented developer who is also a great communicator. We highly recommend her.",
     avatar: memojiAvatar5,
   },
 ];

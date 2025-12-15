@@ -32,10 +32,6 @@ const toolboxItems = [
     iconType: TypeScriptIcon,
   },
   {
-    title: "Tailwind CSS",
-    iconType: TailwindIcon,
-  },
-  {
     title: "Git",
     iconType: GitIcon,
   },
@@ -46,14 +42,6 @@ const toolboxItems = [
   {
     title: "Node.js",
     iconType: NodeIcon,
-  },
-  {
-    title: "React",
-    iconType: ReactIcon,
-  },
-  {
-    title: "Next.js",
-    iconType: NextIcon,
   },
   {
     title: "Python",

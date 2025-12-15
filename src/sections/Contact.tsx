@@ -23,7 +23,7 @@ export const ContactSection = () => {
             <div className='flex flex-col items-center gap-8 md:flex-row md:gap-16 lg:justify-between'>
               <div>
                 <h2 className='font-serif text-2xl md:text-3xl'>
-                  Let's create something amazing together
+                  Let's build something amazing together
                 </h2>
                 <p className='mt-2 text-sm md:text-base lg:max-w-md'>
                   Do you like what you see? Let's connect and discuss how I can
